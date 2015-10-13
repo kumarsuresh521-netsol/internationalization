@@ -53,4 +53,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('LangCtrl', function($scope, $translate) {
+    $scope.changeLanguage = function (langKey) {
+        $translate.use(langKey);
+      };
 });

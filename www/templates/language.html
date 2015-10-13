@@ -1,5 +1,11 @@
 <ion-view title="Language Translation">
-    <ion-content>
+    <ion-content ng-controller="LangCtrl">
+    
+    <div >
+      <button ng-click="changeLanguage('de')"  class="button button-full royal">Dutch</button>
+      <button ng-click="changeLanguage('en')" class="button button-full royal">English</button>
+    </div>
+
         <h1>{{"hello_message" | translate}}</h1>
         <h2>{{"goodbye_message" | translate}}</h2>
     </ion-content>
